@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.27 (Build 217) (http://www.copasi.org) at 2022-09-05T14:37:51Z -->
+<!-- generated with COPASI 4.27 (Build 217) (http://www.copasi.org) at 2022-10-16T15:03:35Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="27" versionDevel="217" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -172,7 +172,9 @@ Reaction scheme where the products are created from the reactants and the change
     <ListOfReactions>
       <Reaction key="Reaction_0" name="E1 Drug Binding" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_0">
     <dcterms:created>
       <rdf:Description>
@@ -181,6 +183,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
@@ -190,7 +193,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5370" name="k1" value="8.14e+10"/>
+          <Constant key="Parameter_5370" name="k1" value="6.94e+10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
@@ -206,7 +209,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_1" name="E1 ATP Binding" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_1">
     <dcterms:created>
       <rdf:Description>
@@ -215,6 +220,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
@@ -224,7 +230,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5369" name="k1" value="8.14e+10"/>
+          <Constant key="Parameter_5369" name="k1" value="6.94e+10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
@@ -261,7 +267,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_0" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5368" name="k1" value="1506.3"/>
+          <Constant key="Parameter_5368" name="k1" value="2227.83"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
@@ -276,7 +282,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_3" name="E1 ATP Disc" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_3">
     <dcterms:created>
       <rdf:Description>
@@ -285,6 +293,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_4" stoichiometry="1"/>
@@ -294,7 +303,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_1" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5367" name="k1" value="3.1746e+06"/>
+          <Constant key="Parameter_5367" name="k1" value="2.7066e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
@@ -309,7 +318,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_4" name="E2 ATP Binding" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_4">
     <dcterms:created>
       <rdf:Description>
@@ -318,6 +329,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
@@ -327,7 +339,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_6" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5366" name="k1" value="8.14e+10"/>
+          <Constant key="Parameter_5366" name="k1" value="6.94e+10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
@@ -343,7 +355,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_5" name="E2 ATP Disc" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_5">
     <dcterms:created>
       <rdf:Description>
@@ -352,6 +366,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_6" stoichiometry="1"/>
@@ -361,7 +376,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_1" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5365" name="k1" value="3.1746e+06"/>
+          <Constant key="Parameter_5365" name="k1" value="2.7066e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
@@ -376,7 +391,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_6" name="E1 to E2" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_6">
     <dcterms:created>
       <rdf:Description>
@@ -385,6 +402,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
@@ -408,7 +426,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_7" name="E2 to E1" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_7">
     <dcterms:created>
       <rdf:Description>
@@ -417,6 +437,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
@@ -448,7 +469,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#ModelParameterSet_1">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-05T14:35:50Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-16T15:02:25Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -474,22 +495,22 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Kinetic Parameters" type="Group">
           <ModelParameterGroup cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 Drug Binding]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 Drug Binding],ParameterGroup=Parameters,Parameter=k1" value="81400000000" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 Drug Binding],ParameterGroup=Parameters,Parameter=k1" value="69400000000" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 ATP Binding]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 ATP Binding],ParameterGroup=Parameters,Parameter=k1" value="81400000000" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 ATP Binding],ParameterGroup=Parameters,Parameter=k1" value="69400000000" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 Drug Disc]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 Drug Disc],ParameterGroup=Parameters,Parameter=k1" value="1506.3" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 Drug Disc],ParameterGroup=Parameters,Parameter=k1" value="2227.8299999999999" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 ATP Disc]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 ATP Disc],ParameterGroup=Parameters,Parameter=k1" value="3174600" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 ATP Disc],ParameterGroup=Parameters,Parameter=k1" value="2706600" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E2 ATP Binding]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E2 ATP Binding],ParameterGroup=Parameters,Parameter=k1" value="81400000000" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E2 ATP Binding],ParameterGroup=Parameters,Parameter=k1" value="69400000000" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E2 ATP Disc]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E2 ATP Disc],ParameterGroup=Parameters,Parameter=k1" value="3174600" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E2 ATP Disc],ParameterGroup=Parameters,Parameter=k1" value="2706600" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 to E2]" type="Reaction">
             <ModelParameter cn="CN=Root,Model=ALK_F1174L_G1202R_Lor_ATP,Vector=Reactions[E1 to E2],ParameterGroup=Parameters,Parameter=k1" value="100000000" type="ReactionParameter" simulationType="fixed"/>
@@ -570,7 +591,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="Type" type="unsignedInteger" value="1"/>
             <Parameter name="log" type="bool" value="1"/>
             <Parameter name="Use Values" type="bool" value="1"/>
-            <Parameter name="Values" type="string" value="0.1E-10, 0.17E-9, 0.51E-9, 1.52E-9, 4.57E-9, 13.72E-9, 41.15E-9, 123.46E-9, 370E-9, 1111.11E-9, 3333.3E-9, 10000E-9,33333.3E-9,100000E-9,333333.3E-9"/>
+            <Parameter name="Values" type="string" value="0.001E-9,0.01E-9,0.1E-9, 0.17E-9, 0.51E-9, 1.52E-9, 4.57E-9, 13.72E-9, 41.15E-9, 123.46E-9, 370E-9, 1111.11E-9, 3333.3E-9, 10000E-9, 33333.3E-9,100000E-9"/>
           </ParameterGroup>
         </ParameterGroup>
         <Parameter name="Output in subtask" type="bool" value="0"/>
@@ -1282,7 +1303,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_0">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-05T14:35:48Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-16T15:02:24Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -1300,7 +1321,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_4">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-05T14:35:48Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-16T15:02:24Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -1318,7 +1339,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_12">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-05T14:35:48Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-16T15:02:24Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -1336,7 +1357,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_16">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-05T14:35:48Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-16T15:02:24Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -1354,7 +1375,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_34">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-05T14:35:48Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-16T15:02:24Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -1372,7 +1393,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_40">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-05T14:35:48Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-16T15:02:24Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>

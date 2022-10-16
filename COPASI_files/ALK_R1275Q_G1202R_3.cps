@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.27 (Build 217) (http://www.copasi.org) at 2022-09-01T20:15:38Z -->
+<!-- generated with COPASI 4.27 (Build 217) (http://www.copasi.org) at 2022-10-04T18:22:15Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="27" versionDevel="217" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -28,7 +28,7 @@ Reaction scheme where the products are created from the reactants and the change
       </ListOfParameterDescriptions>
     </Function>
   </ListOfFunctions>
-  <Model key="Model_1" name="ALK_R1275Q_L1196M_Lor_ATP" simulationType="time" timeUnit="s" volumeUnit="ml" areaUnit="m²" lengthUnit="m" quantityUnit="mmol" type="deterministic" avogadroConstant="6.0221408570000002e+23">
+  <Model key="Model_1" name="ALK_R1275Q_G1202R_Lor_ATP" simulationType="time" timeUnit="s" volumeUnit="ml" areaUnit="m²" lengthUnit="m" quantityUnit="mmol" type="deterministic" avogadroConstant="6.0221408570000002e+23">
     <MiriamAnnotation>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
@@ -165,14 +165,16 @@ Reaction scheme where the products are created from the reactants and the change
 </rdf:RDF>
         </MiriamAnnotation>
         <Expression>
-          &lt;CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2A],Reference=Concentration>+&lt;CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1A],Reference=Concentration>
+          &lt;CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2A],Reference=Concentration>+&lt;CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1A],Reference=Concentration>
         </Expression>
       </ModelValue>
     </ListOfModelValues>
     <ListOfReactions>
       <Reaction key="Reaction_0" name="E1 Drug Binding" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_0">
     <dcterms:created>
       <rdf:Description>
@@ -181,6 +183,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
@@ -190,9 +193,9 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5370" name="k1" value="8.14e+10"/>
+          <Constant key="Parameter_5370" name="k1" value="6.94e+10"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="Parameter_5370"/>
@@ -206,7 +209,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_1" name="E1 ATP Binding" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_1">
     <dcterms:created>
       <rdf:Description>
@@ -215,6 +220,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
@@ -224,9 +230,9 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5369" name="k1" value="8.14e+10"/>
+          <Constant key="Parameter_5369" name="k1" value="6.94e+10"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="Parameter_5369"/>
@@ -261,9 +267,9 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_0" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5368" name="k1" value="142.57"/>
+          <Constant key="Parameter_5368" name="k1" value="332.06"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="Parameter_5368"/>
@@ -276,7 +282,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_3" name="E1 ATP Disc" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_3">
     <dcterms:created>
       <rdf:Description>
@@ -285,6 +293,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_4" stoichiometry="1"/>
@@ -294,9 +303,9 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_1" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5367" name="k1" value="7.4074e+06"/>
+          <Constant key="Parameter_5367" name="k1" value="3.817e+06"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="Parameter_5367"/>
@@ -309,7 +318,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_4" name="E2 ATP Binding" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_4">
     <dcterms:created>
       <rdf:Description>
@@ -318,6 +329,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
@@ -327,9 +339,9 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_6" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5366" name="k1" value="8.14e+10"/>
+          <Constant key="Parameter_5366" name="k1" value="6.94e+10"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="Parameter_5366"/>
@@ -343,7 +355,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_5" name="E2 ATP Disc" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_5">
     <dcterms:created>
       <rdf:Description>
@@ -352,6 +366,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_6" stoichiometry="1"/>
@@ -361,9 +376,9 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_1" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5365" name="k1" value="7.4074e+06"/>
+          <Constant key="Parameter_5365" name="k1" value="3.817e+06"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="Parameter_5365"/>
@@ -376,7 +391,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_6" name="E1 to E2" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_6">
     <dcterms:created>
       <rdf:Description>
@@ -385,6 +402,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
@@ -395,7 +413,7 @@ Reaction scheme where the products are created from the reactants and the change
         <ListOfConstants>
           <Constant key="Parameter_5364" name="k1" value="1e+08"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="Parameter_5364"/>
@@ -408,7 +426,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Reaction>
       <Reaction key="Reaction_7" name="E2 to E1" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_7">
     <dcterms:created>
       <rdf:Description>
@@ -417,6 +437,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
@@ -425,9 +446,9 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_2" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5363" name="k1" value="3.41e+08"/>
+          <Constant key="Parameter_5363" name="k1" value="3.84e+08"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="Parameter_5363"/>
@@ -448,54 +469,54 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#ModelParameterSet_1">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-01T20:11:34Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-04T18:20:50Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
         <ModelParameterGroup cn="String=Initial Time" type="Group">
-          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP" value="0" type="Model" simulationType="time"/>
+          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP" value="0" type="Model" simulationType="time"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Compartment Sizes" type="Group">
-          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment]" value="9.9999999999999998e-13" type="Compartment" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment]" value="9.9999999999999998e-13" type="Compartment" simulationType="fixed"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Species Values" type="Group">
-          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L]" value="0.060221408569999996" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A]" value="602214.08570000005" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1]" value="3.0110704285000001" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1L]" value="0" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1A]" value="0" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2]" value="0" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2A]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L]" value="0.060221408569999996" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A]" value="602214.08570000005" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1]" value="3.0110704285000001" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1L]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1A]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2A]" value="0" type="Species" simulationType="reactions"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Global Quantities" type="Group">
-          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Values[EAtot]" value="0" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Values[EAtot]" value="0" type="ModelValue" simulationType="assignment"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Kinetic Parameters" type="Group">
-          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E1 Drug Binding]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E1 Drug Binding],ParameterGroup=Parameters,Parameter=k1" value="81400000000" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E1 Drug Binding]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E1 Drug Binding],ParameterGroup=Parameters,Parameter=k1" value="69400000000" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E1 ATP Binding]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E1 ATP Binding],ParameterGroup=Parameters,Parameter=k1" value="81400000000" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E1 ATP Binding]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E1 ATP Binding],ParameterGroup=Parameters,Parameter=k1" value="69400000000" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E1 Drug Disc]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E1 Drug Disc],ParameterGroup=Parameters,Parameter=k1" value="142.56999999999999" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E1 Drug Disc]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E1 Drug Disc],ParameterGroup=Parameters,Parameter=k1" value="332.06" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E1 ATP Disc]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E1 ATP Disc],ParameterGroup=Parameters,Parameter=k1" value="7407400" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E1 ATP Disc]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E1 ATP Disc],ParameterGroup=Parameters,Parameter=k1" value="3817000" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E2 ATP Binding]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E2 ATP Binding],ParameterGroup=Parameters,Parameter=k1" value="81400000000" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E2 ATP Binding]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E2 ATP Binding],ParameterGroup=Parameters,Parameter=k1" value="69400000000" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E2 ATP Disc]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E2 ATP Disc],ParameterGroup=Parameters,Parameter=k1" value="7407400" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E2 ATP Disc]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E2 ATP Disc],ParameterGroup=Parameters,Parameter=k1" value="3817000" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E1 to E2]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E1 to E2],ParameterGroup=Parameters,Parameter=k1" value="100000000" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E1 to E2]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E1 to E2],ParameterGroup=Parameters,Parameter=k1" value="100000000" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E2 to E1]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Reactions[E2 to E1],ParameterGroup=Parameters,Parameter=k1" value="341000000" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E2 to E1]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Reactions[E2 to E1],ParameterGroup=Parameters,Parameter=k1" value="384000000" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
         </ModelParameterGroup>
       </ModelParameterSet>
@@ -566,11 +587,11 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="Maximum" type="float" value="0.0001"/>
             <Parameter name="Minimum" type="float" value="9.9999999999999998e-13"/>
             <Parameter name="Number of steps" type="unsignedInteger" value="1000"/>
-            <Parameter name="Object" type="cn" value="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+            <Parameter name="Object" type="cn" value="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
             <Parameter name="Type" type="unsignedInteger" value="1"/>
             <Parameter name="log" type="bool" value="1"/>
             <Parameter name="Use Values" type="bool" value="1"/>
-            <Parameter name="Values" type="string" value="0.1E-10, 0.17E-9, 0.51E-9, 1.52E-9, 4.57E-9, 13.72E-9, 41.15E-9, 123.46E-9, 370E-9, 1111.11E-9, 3333.3E-9, 10000E-9"/>
+            <Parameter name="Values" type="string" value="0.001E-9,0.01E-9,0.1E-9, 0.17E-9, 0.51E-9, 1.52E-9, 4.57E-9, 13.72E-9, 41.15E-9, 123.46E-9, 370E-9, 1111.11E-9, 3333.3E-9, 10000E-9, 33333.3E-9,100000E-9"/>
           </ParameterGroup>
         </ParameterGroup>
         <Parameter name="Output in subtask" type="bool" value="0"/>
@@ -921,13 +942,13 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         A table of scan parameters, time, variable species concentrations, variable compartment volumes, and variable global quantity values.
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EL],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EA],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EL],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EA],Reference=Concentration"/>
       </Table>
     </Report>
     <Report key="Report_21" name="Scan Parameters, Time, Concentrations, Volumes, and Global Quantity Values 1" taskType="scan" separator="&#x09;" precision="6">
@@ -935,13 +956,13 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         A table of scan parameters, time, variable species concentrations, variable compartment volumes, and variable global quantity values.
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EL],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EA],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EL],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EA],Reference=Concentration"/>
       </Table>
     </Report>
     <Report key="Report_22" name="Scan Parameters, Time, Concentrations, Volumes, and Global Quantity Values 2" taskType="scan" separator="&#x09;" precision="6">
@@ -949,18 +970,18 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         A table of scan parameters, time, variable species concentrations, variable compartment volumes, and variable global quantity values.
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EL],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EA],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EL],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[EA],Reference=Concentration"/>
       </Table>
     </Report>
   </ListOfReports>
   <ListOfPlots>
-    <PlotSpecification name="Concentrations, Volumes, and Global Quantity Values Time Scan  R1275Q L1196M  ALK" type="Plot2D" active="0" taskTypes="">
+    <PlotSpecification name="Concentrations, Volumes, and Global Quantity Values Time Scan  R1275Q G1202R  ALK" type="Plot2D" active="0" taskTypes="">
       <Parameter name="log X" type="bool" value="0"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <ListOfPlotItems>
@@ -972,8 +993,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Values[EAtot],Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Values[EAtot],Reference=Value"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[A]" type="Curve2D">
@@ -984,8 +1005,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[E1A]" type="Curve2D">
@@ -996,8 +1017,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1A],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1A],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[E1L]" type="Curve2D">
@@ -1008,8 +1029,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1L],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1L],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[E1]" type="Curve2D">
@@ -1020,8 +1041,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[E2A]" type="Curve2D">
@@ -1032,8 +1053,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2A],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2A],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[E2]" type="Curve2D">
@@ -1044,8 +1065,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[L]" type="Curve2D">
@@ -1056,13 +1077,13 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="Scan of Concentrations, Volumes, and Global Quantity Values R1275Q L1196M ALK" type="Plot2D" active="1" taskTypes="Scan">
+    <PlotSpecification name="Scan of Concentrations, Volumes, and Global Quantity Values R1275Q G1202R ALK" type="Plot2D" active="1" taskTypes="Scan">
       <Parameter name="log X" type="bool" value="1"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <ListOfPlotItems>
@@ -1074,8 +1095,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[A]" type="Curve2D">
@@ -1086,8 +1107,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[E1]" type="Curve2D">
@@ -1098,8 +1119,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[E1L]" type="Curve2D">
@@ -1110,8 +1131,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1L],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1L],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[E1A]" type="Curve2D">
@@ -1122,8 +1143,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1A],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1A],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[E2]" type="Curve2D">
@@ -1134,8 +1155,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[E2A]" type="Curve2D">
@@ -1146,8 +1167,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2A],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2A],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="Values[EAtot]" type="Curve2D">
@@ -1158,8 +1179,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Values[EAtot],Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Values[EAtot],Reference=Value"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -1176,8 +1197,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=ParticleNumber"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=ParticleNumber"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="E1.ParticleNumber" type="Curve2D">
@@ -1188,8 +1209,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1],Reference=ParticleNumber"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1],Reference=ParticleNumber"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="E1A.ParticleNumber" type="Curve2D">
@@ -1200,8 +1221,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1A],Reference=ParticleNumber"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1A],Reference=ParticleNumber"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="E1L.ParticleNumber" type="Curve2D">
@@ -1212,8 +1233,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1L],Reference=ParticleNumber"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E1L],Reference=ParticleNumber"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="E2.ParticleNumber" type="Curve2D">
@@ -1224,8 +1245,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2],Reference=ParticleNumber"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2],Reference=ParticleNumber"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="E2A.ParticleNumber" type="Curve2D">
@@ -1236,8 +1257,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2A],Reference=ParticleNumber"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[E2A],Reference=ParticleNumber"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="L.ParticleNumber" type="Curve2D">
@@ -1248,8 +1269,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=ParticleNumber"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=ParticleNumber"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="Values[EAtot]" type="Curve2D">
@@ -1260,8 +1281,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Values[EAtot],Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Values[EAtot],Reference=Value"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -1269,8 +1290,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   </ListOfPlots>
   <GUI>
     <ListOfSliders>
-      <Slider key="Slider_0" associatedEntityKey="Task_17" objectCN="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=InitialConcentration" objectType="float" objectValue="0.001" minValue="0" maxValue="2" tickNumber="1000" tickFactor="100" scaling="linear"/>
-      <Slider key="Slider_1" associatedEntityKey="Task_16" objectCN="CN=Root,Model=ALK_R1275Q_L1196M_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration" objectType="float" objectValue="1e-10" minValue="0" maxValue="0.0001" tickNumber="1000" tickFactor="100" scaling="linear"/>
+      <Slider key="Slider_0" associatedEntityKey="Task_17" objectCN="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=InitialConcentration" objectType="float" objectValue="0.001" minValue="0" maxValue="2" tickNumber="1000" tickFactor="100" scaling="linear"/>
+      <Slider key="Slider_1" associatedEntityKey="Task_16" objectCN="CN=Root,Model=ALK_R1275Q_G1202R_Lor_ATP,Vector=Compartments[compartment],Vector=Metabolites[L],Reference=InitialConcentration" objectType="float" objectValue="1e-10" minValue="0" maxValue="0.0001" tickNumber="1000" tickFactor="100" scaling="linear"/>
     </ListOfSliders>
   </GUI>
   <ListOfUnitDefinitions>
@@ -1282,7 +1303,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_0">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-01T20:11:32Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-04T18:20:49Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -1300,7 +1321,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_4">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-01T20:11:32Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-04T18:20:49Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -1318,7 +1339,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_12">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-01T20:11:32Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-04T18:20:49Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -1336,7 +1357,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_16">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-01T20:11:32Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-04T18:20:49Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -1354,7 +1375,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_34">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-01T20:11:32Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-04T18:20:49Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
@@ -1372,7 +1393,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Unit_40">
 <dcterms:created>
 <rdf:Description>
-<dcterms:W3CDTF>2022-09-01T20:11:32Z</dcterms:W3CDTF>
+<dcterms:W3CDTF>2022-10-04T18:20:49Z</dcterms:W3CDTF>
 </rdf:Description>
 </dcterms:created>
 </rdf:Description>
