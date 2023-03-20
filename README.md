@@ -1,7 +1,12 @@
 **StructuralStudy_ALKCompoundMutations**
+<<<<<<< HEAD
 Lorlatinib is a third generation small molecule inhibitor developed to target mutated anaplastic lymphoma kinase (ALK). Treatment with lorlatinib shows emergence of secondary mutations in ALK. This repository contains structural files, molecular dynamics (MD) files, induced fit docking (IFD) files, and ordinary differential equations (ODE) files used to model resistance to lorlatinib in ALK with secondary mutations.
 
-**StructuralSudy_ALKCompoundMutations/Structures**
+**StructuralStudy_ALKCompoundMutations/Structures**
+=======
+Lorlatinib is a third generation small molecule inhibitor developed to target mutated anaplastic lymphoma kinase (ALK). Treatment with lorlatinib shows emergence of secondary mutations in ALK. This repository contains structural and ordinary differential equations (ODE) files used to model resistance to lorlatinib in ALK with secondary mutations.
+**StructuralStudy_ALKCompoundMutations/Structures**
+>>>>>>> 95ee0b40cb98e71cee97dfcc1e66c9bd69d8c8cd
 Structure files in PDB format. All structural files generated from induced fit docking (IFD) include water unless specified.
 Following structures were presented in Berko et al. paper:
 
@@ -46,7 +51,7 @@ Cluster 1 - 4 = corresponds to Lorlatinib pose classification per Extended Data 
 
 
 
-**StructuralSudy_ALKCompoundMutations/COPASI_files**
+**StructuralStudy_ALKCompoundMutations/COPASI_files**
 
 Software used COPASI v4.27
 
@@ -77,7 +82,7 @@ f66 = 66% closed conformation
 f90 = 90% closed conformation 
 f0 = 0% closed conformation/open conformation
 
-**StructuralSudy_ALKCompoundMutations/MD**
+**StructuralStudy_ALKCompoundMutations/MD**
 
 The MD simulations are performed in GROMACS 2018.3 using XSEDE resources. 
 All mutations are introduced using BioPhysCode Automacs (https://biophyscode.github.io. ) routine based on MODELLER. Please see MODELLER here:
@@ -85,7 +90,7 @@ https://salilab.org/modeller/
 All the requisite files needed to setup and run the simulations are included in the MD folder including .sh bash file used to submit job run on XSEDE cluster. The equilibration and production runs were set up based on Bevan Lab Tutorials: "Lysozyme in water" example:
 http://www.mdtutorials.com/gmx/lysozyme/index.html
 
-**StructuralSudy_ALKCompoundMutations/Docking**
+**StructuralStudy_ALKCompoundMutations/Docking**
 
 Docking simulations were performed following the Induced Fit Docking protocol Maestro software version 2019-4 (Schrödinger Release 2019-4: Maestro, Schrödinger, LLC, New York, NY, 2021). The Docking folder contains the input and output files from docking simulations. Each system will have the following files:
 •	Lorlatinib.mae and ATP.mae are the input ligand file.
