@@ -1,5 +1,6 @@
 **StructuralStudy_ALKCompoundMutations**
-Lorlatinib is a third generation small molecule inhibitor developed to target mutated anaplastic lymphoma kinase (ALK). Treatment with lorlatinib shows emergence of secondary mutations in ALK. This repository contains structural and ordinary differential equations (ODE) files used to model resistance to lorlatinib in ALK which secondary mutations.
+Lorlatinib is a third generation small molecule inhibitor developed to target mutated anaplastic lymphoma kinase (ALK). Treatment with lorlatinib shows emergence of secondary mutations in ALK. This repository contains structural files, molecular dynamics (MD) files, induced fit docking (IFD) files, and ordinary differential equations (ODE) files used to model resistance to lorlatinib in ALK with secondary mutations.
+
 **StructuralSudy_ALKCompoundMutations/Structures**
 Structure files in PDB format. All structural files generated from induced fit docking (IFD) include water unless specified.
 Following structures were presented in Berko et al. paper:
@@ -75,5 +76,24 @@ f33 = 33% closed conformation
 f66 = 66% closed conformation 
 f90 = 90% closed conformation 
 f0 = 0% closed conformation/open conformation
+
+**StructuralSudy_ALKCompoundMutations/MD**
+
+The MD simulations are performed in GROMACS 2018.3 using XSEDE resources. 
+All mutations are introduced using BioPhysCode Automacs (https://biophyscode.github.io. ) routine based on MODELLER. Please see MODELLER here:
+https://salilab.org/modeller/
+All the requisite files needed to setup and run the simulations are included in the MD folder including .sh bash file used to submit job run on XSEDE cluster. The equilibration and production runs were set up based on Bevan Lab Tutorials: "Lysozyme in water" example:
+http://www.mdtutorials.com/gmx/lysozyme/index.html
+
+**StructuralSudy_ALKCompoundMutations/Docking**
+
+Docking simulations were performed following the Induced Fit Docking protocol Maestro software version 2019-4 (Schrödinger Release 2019-4: Maestro, Schrödinger, LLC, New York, NY, 2021). The Docking folder contains the input and output files from docking simulations. Each system will have the following files:
+•	Lorlatinib.mae and ATP.mae are the input ligand file.
+•	‘system name’.mae is the input structure along with water molecules for lorlatinib docking and Mg2+ ions for ATP docking. 
+•	‘system name’_rec.mae is the input receptor structure file with docking grid needed to set up docking
+•	‘system name’.inp file contains docking parameters
+•	‘system name’-out.maegz contains the output poses from the docking simulation.
+
+
 
 ![image](https://user-images.githubusercontent.com/101832204/197023182-678ca264-872c-458c-8833-c0c25c0e147b.png)
