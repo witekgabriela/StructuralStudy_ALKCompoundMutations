@@ -1,12 +1,12 @@
 **StructuralStudy_ALKCompoundMutations**
-<<<<<<< HEAD
+=======
 Lorlatinib is a third generation small molecule inhibitor developed to target mutated anaplastic lymphoma kinase (ALK). Treatment with lorlatinib shows emergence of secondary mutations in ALK. This repository contains structural files, molecular dynamics (MD) files, induced fit docking (IFD) files, and ordinary differential equations (ODE) files used to model resistance to lorlatinib in ALK with secondary mutations.
 
 **StructuralStudy_ALKCompoundMutations/Structures**
 =======
 Lorlatinib is a third generation small molecule inhibitor developed to target mutated anaplastic lymphoma kinase (ALK). Treatment with lorlatinib shows emergence of secondary mutations in ALK. This repository contains structural and ordinary differential equations (ODE) files used to model resistance to lorlatinib in ALK with secondary mutations.
 **StructuralStudy_ALKCompoundMutations/Structures**
->>>>>>> 95ee0b40cb98e71cee97dfcc1e66c9bd69d8c8cd
+
 Structure files in PDB format. All structural files generated from induced fit docking (IFD) include water unless specified.
 Following structures were presented in Berko et al. paper:
 
